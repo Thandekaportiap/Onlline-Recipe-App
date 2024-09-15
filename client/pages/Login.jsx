@@ -3,17 +3,17 @@ import React from "react";
 const Login = () => {
   return (
     <div
-      style={{ animation: "slideInFromLeft 1s ease-out" }}
+    //   style={{ animation: "slideInFromLeft 1s ease-out" }}
       className="max-w-md w-full bg-gradient-to-r from-blue-800 to-purple-600 rounded-xl shadow-2xl overflow-hidden p-8 space-y-8"
     >
       <h2
-        style={{ animation: "appear 2s ease-out" }}
+        // style={{ animation: "appear 2s ease-out" }}
         className="text-center text-4xl font-extrabold text-white"
       >
         Welcome
       </h2>
       <p
-        style={{ animation: "appear 3s ease-out" }}
+        // style={{ animation: "appear 3s ease-out" }}
         className="text-center text-gray-200"
       >
         Sign in to your account
@@ -72,7 +72,7 @@ const Login = () => {
       </form>
       <div className="text-center text-gray-300">
         Don&apos;t have an account?
-        <a className="text-purple-300 hover:underline" href="#">
+        <a className="text-purple-600 hover:underline" href="#">
           Sign up
         </a>
       </div>

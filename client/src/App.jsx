@@ -4,16 +4,25 @@ import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import Login from '../pages/Login'
 // import Register from '../pages/Register'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 const App = () => {
   return (
     <>
-    <NavBar/>
-    {/* <Register/> */}
-    <h1 className='underline'>hello</h1>
-    <Login/>
-  <Footer/>
+   <BrowserRouter>
+   <NavBar/>
+      <Routes>
+        <Route path="/" element={<Login />}>
+          <Route index element={<Login/>} />
+          {/* <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
     </>
   )
 }
